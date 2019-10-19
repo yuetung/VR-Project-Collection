@@ -34,7 +34,7 @@ public class SaberBehaviour : MonoBehaviour
         //print(isGrabEnding);
         if (interactable.attachedToHand == null && startingGrabType != GrabTypes.None)
         {
-            Debug.Log("starting");
+            //Debug.Log("starting");
             // Save our position/rotation so that we can restore it when we detach
             oldPosition = transform.position;
             oldRotation = transform.rotation;
@@ -48,7 +48,7 @@ public class SaberBehaviour : MonoBehaviour
         }
         else if (isGrabEnding)
         {
-            Debug.Log("ending");
+            //Debug.Log("ending");
             // Detach this object from the hand
             hand.DetachObject(gameObject);
 
